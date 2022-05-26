@@ -24,11 +24,8 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #262f385b;
-}
-
-input:focus, .input-box input {
-  border: none;
+  outline: 2px solid #262f38a6;
+  border-radius: 10px;
 }
 
 ::placeholder {
@@ -58,6 +55,9 @@ input:focus, .input-box input {
   padding: 50px 50px;
   border-radius: 10px;
   margin: 20px;
+  -webkit-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+  -moz-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+  box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
 }
 
 .title {
@@ -102,7 +102,14 @@ input:focus, .input-box input {
   border: none;
   box-sizing: border-box;
   font-weight: 600;
+  box-shadow: 0px 0px 10px -10px rgba(0, 0, 0, 0.021);
+  cursor: pointer;
 }
+
+.button-send:hover {
+  opacity: 0.95;
+}
+
 .buttons a {
   padding: 0 30px;
   font-weight: 600;
