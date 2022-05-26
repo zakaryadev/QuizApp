@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+/* Core styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #262f38;
+  font-size: 16px;
+}
+
+body {
+  background-color: #739ca2;
+}
+
+a {
+  text-decoration: none;
+  color: #262f38;
+}
+
+input {
+  background: transparent;
+}
+
+input:focus {
+  outline: 2px solid #fff;
+}
+
+::placeholder {
+  color: #262f38;
+}
+/* Main Styles */
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 500px;
+  background-color: #fafafa;
+  width: 100%;
+  padding: 50px 50px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.input-box {
+  margin: 25px 0;
+  font-weight: 450;
+}
+
+.input-box input {
+  display: block;
+  padding: 0 30px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #ebf3f5;
+}
+
+.input-box span {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-send {
+  padding: 15px 60px;
+  border-radius: 10px;
+  background-color: #262f38;
+  color: #fff;
+  border: none;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.buttons a {
+  padding: 0 30px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  .button-send {
+    width: 100%; 
+    text-align: center;
+    margin: 0;
+  }
+  .buttons {
+    justify-content: center;
+  }
+  .buttons a {
+    margin: 20px;
+  }
+}
