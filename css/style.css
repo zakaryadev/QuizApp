@@ -29,6 +29,7 @@ input:focus {
 
 ::placeholder {
   color: #262f38;
+  font-weight: 300;
 }
 /* Main Styles */
 
@@ -72,6 +73,7 @@ input:focus {
 .input-box span {
   display: inline-block;
   padding: 10px 0;
+  font-weight: 500;
 }
 
 .buttons {
