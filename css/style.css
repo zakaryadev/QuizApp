@@ -24,7 +24,11 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #fff;
+  outline: 2px solid #262f385b;
+}
+
+input:focus, .input-box input {
+  border: none;
 }
 
 ::placeholder {
@@ -40,15 +44,20 @@ input:focus {
 }
 
 .mt {
-  margin: 10px;
+  margin: 20px;
 }
 
+.mt100 {
+  margin-top: 100px;
+}
 .card-body {
+  width: 450px;
   max-width: 450px;
   background-color: #fafafa;
   width: 100%;
   padding: 50px 50px;
   border-radius: 10px;
+  margin: 20px;
 }
 
 .title {
