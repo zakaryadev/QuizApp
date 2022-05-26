@@ -109,6 +109,6 @@ input:focus {
     justify-content: center;
   }
   .buttons a {
-    margin: 20px;
+    margin-top: 20px;
   }
 }
