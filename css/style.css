@@ -35,23 +35,25 @@ input:focus {
 
 .wrapper {
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
-.container {
-  max-width: 500px;
+.mt {
+  margin: 10px;
+}
+
+.card-body {
+  max-width: 450px;
   background-color: #fafafa;
   width: 100%;
   padding: 50px 50px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .title {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .input-box {
