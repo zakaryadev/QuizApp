@@ -11,7 +11,13 @@
 }
 
 body {
-  background-color: #739ca2;
+  /* background-color: #739ca2; */
+  background-image: url(../src/pattern1.svg);
+  }
+
+span {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -32,6 +38,19 @@ input:focus {
   color: #262f38;
   font-weight: 300;
 }
+
+/* Validation */
+
+.succes {
+  color: rgb(93, 190, 93);
+  font-size: 14px;
+}
+
+.red {
+  color: rgb(214, 100, 100);
+  font-size: 14px;
+}
+
 /* Main Styles */
 
 .wrapper {
@@ -55,9 +74,9 @@ input:focus {
   padding: 50px 50px;
   border-radius: 10px;
   margin: 20px;
-  -webkit-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
-  -moz-box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
-  box-shadow: 0px 0px 100px -25px rgba(0, 0, 0, 0.021);
+  -webkit-box-shadow: 0px 0px 100px 0px rgb(48 57 65 / 18%);
+  -moz-box-shadow: 0px 0px 100px 0px rgb(48 57 65 / 18%);
+  box-shadow: 0px 0px 100px 0px rgb(48 57 65 / 18%);
 }
 
 .title {
@@ -72,7 +91,7 @@ input:focus {
 
 .input-box input {
   display: block;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 16px;
   height: 50px;
   width: 100%;
@@ -116,6 +135,10 @@ input:focus {
 }
 
 @media only screen and (max-width: 576px) {
+  body {
+    /* background-color: #739ca2; */
+    background-image: url(../src/pattern_mob.svg);
+    }
   .button-send {
     width: 100%; 
     text-align: center;

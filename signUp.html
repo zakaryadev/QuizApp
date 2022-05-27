@@ -5,38 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dizimnen ótiw</title>
-    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="wrapper">
       <div class="card-body mt">
         <div class="title">Dizimnen ótiw</div>
-        <form action="#">
+        <form method="post" name="myForm" onsubmit="return numberValidation()">
+            <input type="hidden" name="csrfmiddlewaretoken" value="bdoru2ZCPye3NnyfsPBDd2nV13eaXYSvd3DlnXVWiR54hP40OXtuTQSJvJlfIGcb">
             <div class="user-details">
                 <div class="input-box">
+                  <span class="details">Username</span>
+                  <input type="text" name="username" placeholder="username  kiritiń" required>
+                </div>
+                <div class="input-box">
                   <span class="details">Atıńız</span>
-                  <input type="text" placeholder="Atıńızdı kiritiń" required>
+                  <input type="text" name="first_name" placeholder="Atıńızdı kiritiń" required>
                 </div>
                 <div class="input-box">
                   <span class="details">Familyańız</span>
-                  <input type="text" placeholder="Familyańızdı kiritiń" required>
+                  <input type="text" name="last_name" placeholder="Familyańızdı kiritiń" required>
                 </div>
                 <div class="input-box">
-                  <span class="details">Email</span>
-                  <input type="email" placeholder="Emailıńızdı kiritiń" required>
+                  <span class="details">Telefon</span>
+                  <input name="phone_number" class="telefon" placeholder="Telefon nomerińizdi kiritiń" required>
+                  <span id="validation"></span>
                 </div>
                 <div class="input-box">
                   <span class="details">Parol</span>
-                  <input type="password" placeholder="Paroldi kiritiń" required>
+                  <input type="password" name="password1" placeholder="Paroldi kiritiń" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Parol qaytadan kiritin`</span>
+                  <input type="password" name="password2" placeholder="Paroldi tastiyiqlan`" required>
                 </div>
             </div>
             <div class="buttons">
-              <button class="button-send">Dizimnen ótiw</button>
+              <button type="submit" class="button-send">Dizimnen ótiw</button>
               <a class="" href="./signIn.html">Kiriw</a>
             </div>
         </form>
     </div>
     </div>
+    <script src="./js/validation.js"></script>
 </body>
 </html>

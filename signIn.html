@@ -11,15 +11,16 @@
   <div class="wrapper mt100">
     <div class="card-body">
       <div class="title">Kiriw</div>
-      <form action="#">
+      <form method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="7KCXQdsPWXv5ya8en4Bg2JBtDSn0ibzG9ARRJ8o9pgm62CEZJct7Ix6h7yu53TTm">
         <div class="user-details">
           <div class="input-box">
-            <span class="details">Email</span>
-            <input type="email" placeholder="Emailıńızdı kiritiń" required>
+            <span class="details">Username</span>
+            <input name="username" maxlength="50" type="text" placeholder="Logininizdi kiritiń" required="">
           </div>
           <div class="input-box">
             <span class="details">Parol</span>
-            <input type="password" placeholder="Paroldi kiritiń" required>
+            <input name="password" type="password" placeholder="Paroldi kiritiń" required="">
           </div>
           <div class="buttons">
             <button class="button-send">Kiriw</button>
